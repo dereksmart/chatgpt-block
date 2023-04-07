@@ -1,55 +1,35 @@
-=== Chatgpt Block ===
-Contributors:      The WordPress Contributors
-Tags:              block
-Tested up to:      6.1
-Stable tag:        0.1.0
-License:           GPL-2.0-or-later
-License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+# ChatGPT Block for WordPress
 
-Example block scaffolded with Create Block tool.
+This custom Gutenberg block allows you to generate content using OpenAI's ChatGPT within the WordPress block editor. Enter a ChatGPT prompt, and the block will generate content based on the provided prompt.
 
-== Description ==
+## Requirements
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+- WordPress 5.0 or higher
+- PHP 7.0 or higher
+- Node.js and npm for building the block
+- An OpenAI API key
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+## Installation
 
-== Installation ==
+1. Clone or download this repository to your local machine.
+2. Navigate to the `chatgpt-block` directory in your terminal and run `npm install` to install the required dependencies.
+3. Run `npm run build` to build the block.
+4. In your WordPress installation, go to **Plugins** > **Add New** > **Upload Plugin**, and upload the `chatgpt-block` folder as a .zip file.
+5. Activate the plugin.
 
-This section describes how to install the plugin and get it working.
+## Configuration
 
-e.g.
+1. Go to **Settings** > **ChatGPT Settings** in your WordPress admin dashboard.
+2. Enter your OpenAI API key in the **API Key** field and save the settings.
 
-1. Upload the plugin files to the `/wp-content/plugins/chatgpt-block` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+## Usage
 
+1. Create a new post or page, or edit an existing one in your WordPress admin dashboard.
+2. Add a new block by clicking the **+** icon and search for "chatgpt" in the block search bar.
+3. Select the **ChatGPT Block**.
+4. Enter a ChatGPT prompt in the block and click **Generate Content**.
+5. The generated content will be displayed within the block. You can edit or format the content as needed.
 
-== Frequently Asked Questions ==
+## License
 
-= A question that someone might have =
-
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
-
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
-
-== Changelog ==
-
-= 0.1.0 =
-* Release
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
+This project is licensed under the [GNU General Public License v2.0](LICENSE).
